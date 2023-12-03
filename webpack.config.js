@@ -1,8 +1,8 @@
-import ModuleFederationPlugin from 'webpack/lib/container/ModuleFederationPlugin';
+const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
 export const plugins = [
   new ModuleFederationPlugin({
-    name: 'ember-app',
+    name: 'EmberMicrofrontend',
     filename: 'remoteEntry.js',
     exposes: {
       './App': './dist',
