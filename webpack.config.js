@@ -6,7 +6,7 @@ module.exports = {
       name: 'ember-app',
       filename: 'remoteEntry.js',
       exposes: {
-        './App': './src/App',
+        './App': './dist',
       },
       shared: {},
     }),
